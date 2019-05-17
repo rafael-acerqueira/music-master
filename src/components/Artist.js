@@ -9,7 +9,7 @@ const Artist = ({ artist }) => {
   return (
     <div>
       <h3>{name}</h3>
-      <p>{followers.total}</p>
+      <p>{followers.total} followers</p>
       <p>{genres.join(',')}</p>
       <img 
         src={images[0] && images[0].url} 

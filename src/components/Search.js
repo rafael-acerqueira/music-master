@@ -24,12 +24,17 @@ class Search extends Component {
     return(
       <div>
         <input 
+          className='search-input'
           onChange={this.updateArtistQuery}
           onKeyPress={this.handleKeyPress}
           value={this.state.artistQuery}
-          placeholder='Search for an Artist' 
+          placeholder='Search for an Artist'
         />
-        <button onClick={this.searchArtist}>Search</button>
+        <button
+          className='search-button' 
+          onClick={this.searchArtist}>
+            Search
+        </button>
       </div>
     )
   }
